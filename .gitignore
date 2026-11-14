@@ -19,3 +19,6 @@ dist/
 *.spec
 
 HARDWARE.md
+
+# ---- Libro (epub) y sus fuentes, se guarda aparte ----
+libro/
