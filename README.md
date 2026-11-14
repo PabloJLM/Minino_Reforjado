@@ -64,6 +64,23 @@ pio device monitor
 ```
 Partición `huge_app.csv` (3MB app, sin OTA)
 
+### Flashear el binario con esptool
+
+Si no quieres compilar, descarga `Minino_Reforjado_merged.bin` desde la sección de Releases y flashéalo con esptool.
+
+Instalar esptool
+```
+pip install esptool
+```
+
+Flashear (cambia `COM5` por tu puerto, en Linux sería `/dev/ttyACM0`)
+```
+esptool --chip esp32c6 --port COM5 --baud 460800 write_flash 0x0 Minino_Reforjado_merged.bin
+```
+
+Si no entra en modo de descarga, mantén presionado BOOT, pulsa RESET y suelta BOOT, luego repite el comando.
+
+
 ## Estructura del menu
 
 ```
