@@ -1,0 +1,22 @@
+@font-face{font-family:"Ubuntu";font-weight:normal;font-style:normal;src:url("../fonts/Ubuntu-Regular.ttf")}
+@font-face{font-family:"Ubuntu";font-weight:bold;font-style:normal;src:url("../fonts/Ubuntu-Bold.ttf")}
+@font-face{font-family:"Ubuntu";font-weight:normal;font-style:italic;src:url("../fonts/Ubuntu-Italic.ttf")}
+@font-face{font-family:"Ubuntu";font-weight:bold;font-style:italic;src:url("../fonts/Ubuntu-BoldItalic.ttf")}
+@font-face{font-family:"Ubuntu Mono";font-weight:normal;font-style:normal;src:url("../fonts/UbuntuMono-Regular.ttf")}
+
+body{font-family:"Ubuntu",sans-serif;line-height:1.55;text-align:left}
+p{margin:0 0 .7em}
+a{color:#6d28d9;text-decoration:none}
+h1,h2,h3,h4,h5{font-family:"Ubuntu",sans-serif;font-weight:bold}
+h1{text-align:center;color:#2e1065;margin:30% 0 1em;padding:1em 0;border-top:3px solid #6d28d9;border-bottom:3px solid #6d28d9;page-break-before:always}
+h2{text-align:center;color:#2e1065;margin:1.5em 0 1em;padding-bottom:.4em;border-bottom:1px solid #c4b5fd;page-break-after:avoid}
+h3{color:#4c1d95;margin:1.6em 0 .5em;page-break-after:avoid}
+h4,h5{color:#4c1d95;margin:1.2em 0 .4em}
+img{display:block;max-width:100%;height:auto;margin:1em auto;border:1px solid #ccc}
+pre{font-family:"Ubuntu Mono",monospace;font-size:.85em;text-align:left;white-space:pre-wrap;word-wrap:break-word;background:#f5f2fb;border-left:3px solid #6d28d9;padding:.6em .8em}
+code{font-family:"Ubuntu Mono",monospace;font-size:.95em}
+blockquote{margin:1em 0;padding:.5em 1em;background:#f5f2fb;border-left:3px solid #a78bfa}
+table{border-collapse:collapse;width:100%;font-size:.85em;text-align:left}
+th{background:#ede9fe;border-bottom:2px solid #6d28d9;padding:.3em}
+td{border-bottom:1px solid #ddd;padding:.3em;vertical-align:top}
+ul,ol{text-align:left}

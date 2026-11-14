@@ -7,7 +7,7 @@
 
 Dispositivo para pruebas de seguridad WiFi y Bluetooth, basado en ESP32-C6. 
 
-Tiene pantalla OLED, 4 botones, buzzer, NeoPixels, GPS y lector de SD. 
+Tiene pantalla OLED, 4 botones, buzzer, NeoPixels y lector de SD. 
 
 No se necesita ninguna PC o conexion a internet
 
@@ -17,7 +17,6 @@ No se necesita ninguna PC o conexion a internet
 
 - MCU: ESP32-C6-WROOM-1U-N8/16
 - Pantalla: OLED SH1106 128x64, I2C
-- GPS: ATGM336H-6N-74, 115200 baudios
 - NeoPixel: 9 LEDs
 - Botones: SELECT, UP, DOWN, BACK
 - Buzzer 
@@ -37,7 +36,6 @@ No se necesita ninguna PC o conexion a internet
 | NEOPIXEL   | 11  |
 | BUZZER     | 2   |
 | LED1       | 3   |
-| GPS ON     | 8   |
 | CD    | 18  |
 
 ## Compilar y flashear
@@ -68,8 +66,6 @@ MENU
 │   ├── Wifi Captive Portal
 │   ├── AP Flood
 │   ├── Bluetooth Spam
-│   ├── GPS Position     (NO probado a fondo)
-│   ├── Wardriving       (aun no implementado)
 │   ├── Sniffer
 │   ├── PC-Mode
 │   └── BLE Scanner
@@ -93,8 +89,6 @@ El portal puede cargarse desde la SD (para HTML y CSS custom) o usar uno que ya 
 **Bluetooth Spam**: Manda anuncios Bluetooth que hacen aparecer los popups de emparejamiento de Apple, Microsoft y Samsung, como hacen herramientas como ESP32Marauder. 
 Cada anuncio sale con una direccion distinta para que el celular lo vea como un dispositivo nuevo cada vez. 
 
-**GPS Position**: Muestra la posicion en vivo que da el modulo GPS. Todavia no se ha probado bien.
-
 **Sniffer**: Captura paquetes WiFi del ambiente 
 
 **PC-Mode**: Se conecta el Minino Reforjado a una PC por cable y se maneja todo desde una terminal, con comandos para ver el estado del dispositivo, cambiar el color del NeoPixel, tocar el buzzer, ver archivos e info de la SD, escanear redes WiFi cercanas, armar la lista de redes falsas, y revisar el registro del portal cautivo.
@@ -113,10 +107,4 @@ Cada anuncio sale con una direccion distinta para que el celular lo vea como un 
 
 **Conexion Remota y Servidor FTP** -> Levanta un servidor FTP, se puede utilizar curl, ftp, filezilla o el explorador de archivos de windows
 
-**Conexion Remota** -> Inicia un AP y levanta una terminal remota por TCP (puerto 2323), para manejarla sin cable como si fuera la terminal serial  
-
-## Problemas conocidos
-
-- GPS Position: no se ha probado a fondo. Lo unico que sabemos es que el modulo prende y da señal, pero no se ha confirmado que la pantalla muestre bien la posicion.
-- Wardriving: esta reservado en el menu pero todavia no se le programo nada por los mismos problemas de GPS 
-
+**Conexion Remota** -> Inicia un AP y levanta una terminal remota por TCP (puerto 2323), para manejarla sin cable como si fuera la terminal serial
