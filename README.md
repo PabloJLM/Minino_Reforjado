@@ -4,6 +4,7 @@
 ![Framework](https://img.shields.io/badge/framework-Arduino-00979D?logo=arduino&logoColor=white)
 ![Language](https://img.shields.io/badge/lenguaje-C%2B%2B-00599C?logo=cplusplus&logoColor=white)
 [![Wiki](https://img.shields.io/badge/docs-wiki-informational)](https://github.com/PabloJLM/Minino_Reforjado/wiki)
+[![Libro](https://img.shields.io/badge/docs-libro%20epub%20y%20pdf-blueviolet)](https://github.com/PabloJLM/Minino_Reforjado/releases/latest)
 
 Dispositivo para pruebas de seguridad WiFi y Bluetooth, basado en ESP32-C6. 
 
@@ -12,6 +13,11 @@ Tiene pantalla OLED, 4 botones, buzzer, NeoPixels y lector de SD.
 No se necesita ninguna PC o conexion a internet
 
 > **Nota sobre el nombre:** este proyecto se llamó antes *camioneta* — el nombre hacía referencia a la forma del layout, parecida a una camioneta de Guatemala. Ahora se llama **Minino Reforjado**.
+
+## Documentación
+
+- **Wiki.** La guía de cada app y ajuste, con los tutoriales paso a paso. <https://github.com/PabloJLM/Minino_Reforjado/wiki>
+- **Libro (epub y pdf).** El mismo contenido de la wiki en un solo documento, para leerlo sin internet. Se descarga desde la última versión en Releases. <https://github.com/PabloJLM/Minino_Reforjado/releases/latest>
 
 ## Hardware
 
